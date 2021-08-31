@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
+    <link rel="stylesheet" href="{{css_directory}}style.css">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %} {% endblock %}
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="{{javascript_directory}}all.js"></script>
+    <script>
+    var swiper = new Swiper(".swiper-container", {});
+    var swiper_card = new Swiper(".swiper-card", {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        freeMode: true,
+    });
+    </script>
+      
+</body>
+</html>
