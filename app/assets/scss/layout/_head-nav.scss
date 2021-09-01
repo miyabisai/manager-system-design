@@ -1,0 +1,32 @@
+.head-nav{
+    display: flex;
+    justify-content: space-between; 
+    padding:map-get($spacers,9) 0;
+    &-left{
+        display: flex;
+        align-items: center;
+
+    }
+
+    &-right{
+        display: flex;
+        align-items:center;
+    }
+    &-title{
+        font-size: map-get($font-sizes, 5);
+        line-height: calc(#{map-get($font-sizes, 5)*1.5});
+        font-weight: bold;
+        margin-right: map-get($spacers,11);
+    }
+
+    &-sub-title{
+        line-height: calc(#{map-get($font-sizes, 5)*1.5});
+        font-weight: bold;
+    }
+
+    &-input{
+        appearance:none;
+        outline: none;
+        border:none;
+    }
+}

@@ -1,40 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
-</head>
-<body>
-  <main class="d-flex">
-    <nav>
-     <div class="side-nav position-relative">
-        <div class="logo">
-            <img src="images/logo/logo-ANSWER.svg" alt="logo">
-        </div>
-        <ul class="nav-links">
-          <li class="icon icon__dashboard"><span></span><a href="#">Dashboard</a></li>
-          <li class="icon icon__question"><span></span><a href="#">Question</a></li>
-          <li class="icon icon__assignment"><span></span><a href="#">Assignment</a></li>
-          <li class="icon icon__course"><span></span><a href="#">Course</a></li>
-          <li class="icon icon__admin"><span></span><a href="#">Admin</a></li>
-          <li class="icon icon__settings"><span></span><a href="#">Settings</a></li>
-        </ul>
-        <div class="user position-bottom">
-          <div class="user-head">
-            <img src="images/peoples/andychen.jpeg" alt="大叔">
-          </div>
-          <div class="user-content">
-            <div class="user-name">Andy Chen</div>
-            <div class="user-mail small-text">andy0401@mail.com</div>
-          </div>
-        </div>
-     </div>
-    </nav>
-    <div class="container">
-   
+{% extends "basic_layout.njk" %}
+{% block content %}
     <div class="head-nav">
         <div class="head-nav-left">
             <h1 class="head-nav-title">Assignment</h1>
@@ -125,7 +90,7 @@
                 <li class="post post-article post-data">
                     <div class="user">
                         <div class="user-head">
-                          <img src="images/peoples/emilywang.jpeg" alt="只能叫姊姊">
+                          <img src="{{image_directory}}peoples/emilywang.jpeg" alt="只能叫姊姊">
                         </div>
                         <div class="user-content-sm">
                           <div class="user-name">Emily Wang</div>
@@ -142,7 +107,7 @@
                     <div class="author w-100 d-flex flex-row jusctify-content-between">
                         <div class="user w-100">
                             <div class="user-head">
-                                 <img src="images/peoples/andychen.jpeg" alt="大叔">
+                                 <img src="{{image_directory}}peoples/andychen.jpeg" alt="大叔">
                             </div>
                              <div class="user-content-sm">
                                 <div class="user-name">
@@ -184,9 +149,4 @@
         </div>
     </div>
    
-
-   </div>
-   </main>
-   <script src="js/all.js"></script>
-</body>
-</html>
+{% endblock %}

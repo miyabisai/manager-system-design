@@ -6,7 +6,10 @@
 
 body{
     // padding: 0 1rem 0 1rem;
-
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: Lato,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a{
@@ -16,7 +19,8 @@ a{
     font-size: 1rem;
     line-height: 1.5rem;
     word-wrap: normal;
-
+    color:$text;
+    width: 100%;
 }
 
 h1,h2,h3,h4,h5,h6,p,ul,ol,dl,li{

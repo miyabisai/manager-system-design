@@ -1,0 +1,86 @@
+.position-relative{
+    position: relative;
+}
+
+.position-bottom{
+    position: absolute;
+    bottom: $body-bottom-space;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+.flex-column{
+    flex-direction:column;
+}
+
+.justify-content-start{
+    justify-content: flex-start;
+}
+.justify-content-end{
+    justify-content: flex-end;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+
+.vertical-align-center{
+height: 100%;
+}
+.align-self-end{
+    align-self: flex-end;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+.font-info{
+    color:$info;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.mt-2{
+    margin-top:map-get($spacers,2);
+}
+.mt-4{
+    margin-top:map-get($spacers,4);
+}
+.mr-4{
+    margin-right:map-get($spacers,4);
+}
+.mt-6{
+    margin-top:map-get($spacers,6);
+}
+.mb-6{
+    margin-bottom:map-get($spacers,6);
+}
+
+.no-border-top{
+    border-top: none !important;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.flex-grow{
+    flex-grow: auto;
+}
+
+.text-primary{
+    color:$primary;
+}

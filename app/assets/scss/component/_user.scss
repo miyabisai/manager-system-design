@@ -1,0 +1,18 @@
+.user{
+    display: flex;
+    align-items: center;
+    &-head{
+        img{
+            width: map-get($spacers,10);
+            height: map-get($spacers,10);
+            border-radius: 50%;
+        }
+    }
+    &-content{
+        margin-left: 1rem;
+        
+    }
+    &-content-sm{
+        margin-left: 0.5rem;
+    }
+}

@@ -32,7 +32,7 @@ const paths = {
     templates: 'app/assets/templates'
   },
   images: {
-    assets: 'app/assets/images/**/*{.png,.jpg,.svg}',
+    assets: 'app/assets/images/**/*{.png,.jpg,.jpeg,.svg}',
     dest: 'app/dist/images',
   },
   deploy:{

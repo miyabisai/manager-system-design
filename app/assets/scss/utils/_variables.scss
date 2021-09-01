@@ -1,0 +1,45 @@
+// color
+$primary:#198754;
+$secondary:#F8F9FA;
+$third:#F8F9FA;
+$warn:#DC3545;
+$border:#CED4DA;
+$text:#212529;
+$info:#6C757D;
+$transparent:transparent;
+$white:#fff;
+
+//spacer
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25, //4
+  2: $spacer * .5,  //8
+  3: $spacer * .75,  //12
+  4: $spacer,       //16
+  5: $spacer * 1.25,//20
+  6: $spacer * 1.5, //24
+  7: $spacer * 1.875,//30
+  8: $spacer * 2,    //32
+  9: $spacer * 2.125,//34
+  10: $spacer * 2.5, //40
+  11: $spacer * 3,   //48
+  12: $spacer * 3.75, //60
+  13: $spacer * 0.625 //10
+) !default;
+
+//font
+$font-size-base:1rem !default;
+$font-sizes: (
+  1: $font-size-base * 2.5, //40
+  2: $font-size-base * 2.25,//36
+  3: $font-size-base * 2,//32
+  4: $font-size-base * 1.75,//28
+  5: $font-size-base * 1.5,//24
+  6: $font-size-base * 1.25,//20
+  7: $font-size-base * 0.875, //14
+  8: $font-size-base * 0.75 //12
+) !default;
+
+$body-top-space:map-get($spacers, 10);
+$body-bottom-space:map-get($spacers, 10);

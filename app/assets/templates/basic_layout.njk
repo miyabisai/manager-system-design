@@ -4,26 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-/>
-
     <link rel="stylesheet" href="{{css_directory}}style.css">
     <title>Document</title>
 </head>
 <body>
-    {% block content %} {% endblock %}
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="{{javascript_directory}}all.js"></script>
-    <script>
-    var swiper = new Swiper(".swiper-container", {});
-    var swiper_card = new Swiper(".swiper-card", {
-        slidesPerView: 3,
-        spaceBetween: 0,
-        freeMode: true,
-    });
-    </script>
-      
+  <main class="d-flex">
+    <nav>
+     <div class="side-nav position-relative">
+        <div class="logo">
+            <img src="{{image_directory}}logo/logo-ANSWER.svg" alt="logo">
+        </div>
+        <ul class="nav-links">
+          <li class="icon icon__dashboard"><span></span><a href="#">Dashboard</a></li>
+          <li class="icon icon__question"><span></span><a href="#">Question</a></li>
+          <li class="icon icon__assignment"><span></span><a href="#">Assignment</a></li>
+          <li class="icon icon__course"><span></span><a href="#">Course</a></li>
+          <li class="icon icon__admin"><span></span><a href="#">Admin</a></li>
+          <li class="icon icon__settings"><span></span><a href="#">Settings</a></li>
+        </ul>
+        <div class="user position-bottom">
+          <div class="user-head">
+            <img src="{{image_directory}}peoples/andychen.jpeg" alt="大叔">
+          </div>
+          <div class="user-content">
+            <div class="user-name">Andy Chen</div>
+            <div class="user-mail small-text">andy0401@mail.com</div>
+          </div>
+        </div>
+     </div>
+    </nav>
+    <div class="container">
+   {% block content %} {% endblock %}
+   </div>
+   </main>
+   <script src="{{javascript_directory}}all.js"></script>
 </body>
 </html>

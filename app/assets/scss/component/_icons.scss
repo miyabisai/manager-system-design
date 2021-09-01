@@ -1,0 +1,151 @@
+
+.icon{
+    span{
+        display: block;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right:map-get($spacers,3);
+        height: map-get($spacers,6);
+        width: map-get($spacers,6);
+        cursor: pointer;
+    }
+
+    &__dashboard{
+        span{
+            background-image: url("../../images/icons/dashboard_black_24dp.svg");
+        }
+    }
+
+    &__question{
+        span{
+            background-image: url("../../images/icons/question_answer_black_24dp.svg");
+        }
+    }
+
+    &__assignment{
+       span{
+            background-image: url("../../images/icons/assignment_black_24dp.svg");
+       }
+       
+    }
+
+    &__course{
+        span{
+            background-image: url("../../images/icons/video_library_black_24dp.svg");
+        }
+    }
+
+    &__admin{
+        span{
+            background-image: url("../../images/icons/people_black_24dp.svg");
+        }
+    }
+
+    &__settings{
+        span{
+            background-image: url("../../images/icons/settings_black_24dp.svg");
+        }
+    }
+
+    &__dropdown{
+        span{
+            background-image: url("../../images/icons/expand_more_black_24dp.svg");
+            
+        }
+    }
+
+    &__search{
+        span{
+            background-image: url("../../images/icons/search_black_24dp.svg");
+        }
+    }
+
+    &__alarm{
+        span{
+            background-image: url("../../images/icons/notifications_active_black_24dp.svg");
+        }
+    }
+
+    &__more{
+        span{
+            background-image: url("../../images/icons/more_vert_black_24dp.svg");
+        }
+    }
+
+    &__star{
+        span{
+            background-image: url("../../images/icons/star_outline_black_24dp.svg");
+        }
+    }
+
+    &__pen{
+        span{
+            background-image: url("../../images/icons/edit_black_24dp.svg");
+        }
+    }
+
+    &__prev{
+        span{
+            background-image: url("../../images/icons/chevron_left_green_24dp.svg");
+        }
+    }
+
+    &__next{
+        span{
+            background-image: url("../../images/icons/navigate_next_green_24dp.svg");
+        }
+    }
+
+}
+
+.icon{
+    &:hover{
+        a{
+            color:$primary;
+        }
+    }
+    &__dashboard:hover{
+        span{
+            background-image: url("../../images/icons/dashboard_green_24dp.svg");
+        }
+    }
+
+    &__question:hover{
+        span{
+            background-image: url("../../images/icons/question_answer_green_24dp.svg");
+        }
+    }
+
+    &__assignment:hover{
+       span{
+            background-image: url("../../images/icons/assignment_green_24dp.svg");
+       }
+       
+    }
+
+    &__course:hover{
+        span{
+            background-image: url("../../images/icons/video_library_green_24dp.svg");
+        }
+    }
+
+    &__admin:hover{
+        span{
+            background-image: url("../../images/icons/people_green_24dp.svg");
+        }
+    }
+
+    &__settings:hover{
+        span{
+            background-image: url("../../images/icons/settings_green_24dp.svg");
+        }
+    }
+
+}
+
+.icon-button{
+    outline:none;
+    appearance: none;
+    border: 0;
+    background: $transparent;
+}

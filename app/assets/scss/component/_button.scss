@@ -1,0 +1,37 @@
+.btn{
+    display: inline-block;
+    font-weight: bold;
+    appearance: none;
+    padding: 0.5rem 2rem;
+}
+
+.btn-white{
+    background-color:$white;
+    color: $primary;
+    border: 1px solid $primary;
+    border-radius: 3px;
+}
+
+.btn-primary{
+    background-color:$primary;
+    color: $white;
+    border: 1px solid $primary;
+    border-radius: 3px;
+}
+
+.attachment{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    width: 11.5rem;
+    border: 1px solid $border;
+    padding:map-get($spacers,13) map-get($spacers,3);
+    background: $third;
+    
+    span{
+        margin: 0;
+        margin-right: 0.5rem;
+        background-image: url("../../images/icons/attach_file_black_24dp.svg");
+        display: inline-block;
+    }
+}
