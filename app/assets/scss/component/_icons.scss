@@ -99,10 +99,21 @@
 }
 
 .icon{
+
     &:hover{
         a{
             color:$primary;
         }
+        span{
+            display: block;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right:map-get($spacers,3);
+            height: map-get($spacers,6);
+            width: map-get($spacers,6);
+            cursor: pointer;
+        }
+        
     }
     &__dashboard:hover{
         span{
