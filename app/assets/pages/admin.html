@@ -1,40 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
-</head>
-<body>
-  <main class="d-flex">
-    <nav>
-     <div class="side-nav position-relative">
-        <div class="logo">
-            <img src="images/logo/logo-ANSWER.svg" alt="logo">
-        </div>
-        <ul class="nav-links">
-          <li class="icon icon__dashboard"><span class="mr-3"></span><a href="#">Dashboard</a></li>
-          <li class="icon icon__question"><span class="mr-3"></span><a href="#">Question</a></li>
-          <li class="icon icon__assignment"><span class="mr-3"></span><a href="index.html">Assignment</a></li>
-          <li class="icon icon__course"><span class="mr-3"></span><a href="#">Course</a></li>
-          <li class="icon icon__admin"><span class="mr-3"></span><a href="admin.html">Admin</a></li>
-          <li class="icon icon__settings"><span class="mr-3"></span><a href="#">Settings</a></li>
-        </ul>
-        <div class="user position-bottom">
-          <div class="user-head">
-            <img src="images/peoples/andychen.jpeg" alt="大叔">
-          </div>
-          <div class="user-content">
-            <div class="user-name">Andy Chen</div>
-            <div class="user-mail small-text">andy0401@mail.com</div>
-          </div>
-        </div>
-     </div>
-    </nav>
-    <div class="container">
-   
+{% extends "basic_layout.njk" %}
+{% block content %}
 <div class="wrap h-100 position-relative">
     <div class="head-nav">
         <div class="head-nav-left">
@@ -245,9 +210,4 @@
           </div>
     </div>
 </div> 
-
-   </div>
-   </main>
-   <script src="js/all.js"></script>
-</body>
-</html>
+{% endblock %}

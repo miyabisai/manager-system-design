@@ -1,0 +1,27 @@
+.pagination{
+    
+    &-link{
+        width: map-get($spacers,8);
+        height: map-get($spacers,8);
+        border: 2px solid $primary;
+        border-right: none;
+        &:last-child{
+            border-right: 2px solid $primary;
+        }
+
+        &:hover{
+            background-color: $primary;
+            a{color: $white;}
+        }
+    }
+
+    &-link-right{
+        border-radius: 0 3px 3px 0;
+    }
+
+    &-link-left{
+        border-radius: 3px 0 0 3px;
+    }
+
+
+}

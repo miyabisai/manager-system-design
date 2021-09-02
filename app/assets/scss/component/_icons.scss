@@ -4,10 +4,23 @@
         display: block;
         background-repeat: no-repeat;
         background-size: cover;
-        margin-right:map-get($spacers,3);
         height: map-get($spacers,6);
         width: map-get($spacers,6);
         cursor: pointer;
+    }
+
+    &-size-12{
+        span{
+            height: map-get($spacers,4);
+            width: map-get($spacers,4);
+        }
+    }
+
+    &-size-32{
+        span{
+            height: map-get($spacers,8);
+            width: map-get($spacers,8);
+        }
     }
 
     &__dashboard{
@@ -84,18 +97,36 @@
         }
     }
 
-    &__prev{
+    &__pg_prev{
         span{
             background-image: url("../../images/icons/chevron_left_green_24dp.svg");
         }
     }
 
-    &__next{
+    &__pg_next{
         span{
             background-image: url("../../images/icons/navigate_next_green_24dp.svg");
         }
     }
 
+    &__add{
+        span{
+            background-image: url("../../images/icons/add_green_24dp.svg");
+        }
+    }
+    
+    &__watch{
+        span{
+            background-image: url("../../images/icons/visibility_black_24dp.svg");
+        }
+    }
+
+    &__downward{
+        span{
+            background-image: url("../../images/icons/arrow_downward_green_24dp.svg");
+        }
+    }
+  
 }
 
 .icon{
@@ -108,9 +139,6 @@
             display: block;
             background-repeat: no-repeat;
             background-size: cover;
-            margin-right:map-get($spacers,3);
-            height: map-get($spacers,6);
-            width: map-get($spacers,6);
             cursor: pointer;
         }
         
@@ -149,6 +177,18 @@
     &__settings:hover{
         span{
             background-image: url("../../images/icons/settings_green_24dp.svg");
+        }
+    }
+
+    &__pg_prev:hover{
+        span{
+            background-image: url("../../images/icons/chevron_left_white_24dp.svg");
+        }
+    }
+
+    &__pg_next:hover{
+        span{
+            background-image: url("../../images/icons/navigate_next_white_24dp.svg");
         }
     }
 
