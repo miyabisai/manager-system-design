@@ -62,7 +62,7 @@
 
     &__dropdown{
         span{
-            background-image: url("../../images/icons/expand_more_black_24dp.svg");
+            background-image: url("../../images/icons/expand_more_green_24dp.svg");
             
         }
     }
@@ -126,7 +126,12 @@
             background-image: url("../../images/icons/arrow_downward_green_24dp.svg");
         }
     }
-  
+
+    &__clear{
+        span{
+            background-image: url("../../images/icons/clear_black_24dp.svg");
+        }
+    }
 }
 
 .icon{

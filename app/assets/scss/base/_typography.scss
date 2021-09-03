@@ -17,3 +17,8 @@
     line-height: calc(#{map-get($font-sizes,7)}*1.5);
     font-weight:400;
 }
+
+
+.fz-6{
+    font-size: map-get($spacers,6);
+}

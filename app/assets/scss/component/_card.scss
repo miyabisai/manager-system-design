@@ -1,0 +1,50 @@
+.card{
+    padding: map-get($spacers,8);
+    padding-bottom: 0;
+    background-color: #fff;
+    width: 30rem;
+
+    &-image{
+        width:8.75rem;
+        height:8.75rem;
+        object-fit: cover;
+    }   
+    &-expand{
+        transition: all .5s;
+    } 
+}
+
+.hide-buttons{
+    display: none;
+    animation-duration: .5s;
+    animation-name: hide-buttons;
+}
+
+.show-buttons{
+    display: block;
+    animation-duration: .5s;
+    animation-name: show-buttons;
+}
+
+.hide-card{
+    display: none;
+}
+
+.expand{
+    transform: rotate(180deg);
+}
+
+.restract{
+    transform: rotate(0deg);
+}
+
+@keyframes show-buttons {
+    from {height:0;}
+    to {height:35px;}
+}
+
+@keyframes hide-buttons {
+    from {height:35px;}
+    to {height:0;}
+}
+

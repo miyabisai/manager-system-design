@@ -19,6 +19,13 @@
     border-radius: 3px;
 }
 
+.btn-warn{
+    background-color:$white;
+    color: $warn;
+    border: 1px solid $warn;
+    border-radius: 3px;
+}
+
 .attachment{
     display: inline-block;
     display: flex;
