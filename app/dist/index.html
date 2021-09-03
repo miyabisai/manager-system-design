@@ -15,7 +15,7 @@
          <div class="card-content w-100">
             <div class="id d-flex justify-content-between">
                <p>#1</p>
-               <button id="iconClear" class="icon-button icon icon__clear p-0">
+               <button id="closeCard" class="icon-button icon icon__clear p-0">
                   <span></span>
               </button>
             </div>
@@ -37,18 +37,149 @@
       </div>
    </div>
 </div>
-  <div id="addMember" class="full-screen-background">
-   <div class="container d-flex justify-content-center align-items-center">
-      <div class="form mt-4">
+  <div id="addMember" class="full-screen-background d-none">
+   <div class="container d-flex justify-content-center align-items-center h-100">
+      <div class="form">
          <div class="form-head">
             <h1 class="fz-5 font-bold">New Admin</h1>
-            <button id="iconClear" class="icon-button icon icon__clear p-0">
+            <button id="closeAdminForm" class="icon-button icon icon__clear p-0">
                <span></span>
            </button>
          </div>
-         <div class="form-content"></div>
+         <div class="form-content">
+            <div class="form-part d-flex flex-column">
+               <h3 class="form-title">Account</h3>
+               <label class="form-label" for="addAccountName">Name</label>
+               <input class="form-input" id="addAccountName" type="text">
+               <label class="form-label" for="addAccountEmail">Email</label>
+               <input class="form-input" id="addAccountEmail" type="text">
+            </div>
+            <div class="form-part"> 
+               <h3 class="form-title">Verification</h3>
+               <div class="form-status d-flex justify-content-between mb-4">
+                  <button  class="icon-button icon icon__problem p-0 d-flex align-items-center">
+                     <span class="mr-2"></span>
+                     <p>Unverified</p>
+                 </button>
+                  <p class="small-text"> 2020/4/12   </p>
+               </div>
+               <button class="btn btn-lg btn-verification mb-4">Send Verification Mail</button>
+            </div>
+            <div class="form-part"> 
+               <h3 class="form-title">Access Level</h3>
+               <select  class="form-select mb-4" name="admin-level" id="admin-level">
+                  <option value="">-Choose access level-</option>
+                  <option value="">-Choose access leve2-</option>
+                  <option value="">-Choose access leve3-</option>
+              </select>
+            </div>
+            <div class="form-part d-flex flex-column"> 
+               <h3 class="form-title">Custom Access</h3>
+               <label for="Lecture" class="form-checkbox">
+                  <input type="checkbox" id="Lecture" name="Lecture" class="ml-2">
+                  Lecture
+               </label>  
+               <label for="Lecture" class="form-checkbox">
+                  <input type="checkbox" id="Coupon" name="Coupon" class="ml-2">
+                  Coupon
+               </label>  
+               <label for="Lecture" class="form-checkbox">
+                  <input type="checkbox" id="Message" name="Message" class="ml-2">
+                  Message
+               </label>  
+               <label for="Lecture" class="form-checkbox">
+                  <input type="checkbox" id="Setting" name="Setting" class="ml-2">
+                  Setting
+               </label>  
+               <label for="Lecture" class="form-checkbox">
+                  <input type="checkbox" id=" Task Menu" name=" Task Menu" class="ml-2">
+                  Task Menu
+               </label>
+            
+            </div>
+         </div>
          <div class="form-footer">
-            hekko
+            <div class="buttons">
+               <input type="button" class="btn btn-white mr-4" value="Cancel">
+               <input type="button" class="btn btn-primary" value="Update">
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+  <div id="editMember" class="full-screen-background d-none">
+   <div class="container d-flex justify-content-center align-items-center h-100">
+      <div class="form">
+         <div class="form-head">
+            <h1 class="fz-5 font-bold">Edit Member</h1>
+            <button id="closeEditForm" class="icon-button icon icon__clear p-0">
+               <span></span>
+           </button>
+         </div>
+         <div class="form-content">
+            <div class="form-part d-flex flex-column">
+               <h3 class="form-title">Account</h3>
+               <label class="form-label" for="editAccountName">Name</label>
+               <input class="form-input" id="editAccountName-name" type="text" value="Emir Wicks" disabled>
+               <label class="form-label" for="editAccountEmail">Email</label>
+               <input class="form-input" id="editAccountEmail" type="text" value="emir.wicks@mail.com" disabled>
+            </div>
+            <div class="form-part"> 
+               <h3 class="form-title">Verification</h3>
+               <div class="form-status d-flex justify-content-between mb-4">
+                  <button  class="icon-button icon icon__checked p-0 d-flex align-items-center">
+                     <span class="mr-2"></span>
+                     <p>Verified</p>
+                  </button>
+
+                  <p class="small-text"> 2020/4/12</p>
+               </div>
+               <button class="btn btn-lg btn-disabled mb-4 disabled">Send Verification Mail</button>
+            </div>
+            <div class="form-part"> 
+               <h3 class="form-title">Access Level</h3>
+               <select  class="form-select mb-4" name="admin-level" id="editAdminLevel">
+                  <option value="">Admin</option>
+              </select>
+            </div>
+            <div class="form-part d-flex flex-column"> 
+               <h3 class="form-title">Custom Access</h3>
+               <label for="editLecture" class="form-checkbox">
+                  <input type="checkbox" id="editLecture" name="Lecture" class="ml-2">
+                  Lecture
+               </label>  
+               <label for="editCoupon" class="form-checkbox">
+                  <input type="checkbox" id="editCoupon" name="Lecture" class="ml-2">
+                  Coupon
+               </label>  
+               <label for="editMessage" class="form-checkbox">
+                  <input type="checkbox" id="editMessage" name="Lecture" class="ml-2">
+                  Message
+               </label>  
+               <label for="editSetting" class="form-checkbox">
+                  <input type="checkbox" id="editSetting" name="Lecture" class="ml-2">
+                  Setting
+               </label>  
+               <label for="editTaskMenu" class="form-checkbox">
+                  <input type="checkbox" id="editTaskMenu" name="Lecture" class="ml-2">
+                  Task Menu
+               </label>
+            
+            </div>
+            <div class="form-part mb-11"> 
+               <h3 class="form-title">Deactivate Account</h3>
+               <button  class="icon-button icon icon__problem p-0 d-flex align-items-center mb-4">
+                  <span class="mr-2"></span>
+                  <p class="text-warn">This cannot be undone!</p>
+              </button>
+              <input type="button" class="btn btn-lg btn-warn" value="Deactivate This Account">
+            </div>
+         </div>
+         <div class="form-footer">
+            <div class="buttons">
+               <input type="button" class="btn btn-white mr-4" value="Cancel">
+               <input type="button" class="btn btn-primary" value="Update">
+            </div>
          </div>
       </div>
    </div>

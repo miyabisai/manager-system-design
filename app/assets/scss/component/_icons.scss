@@ -132,6 +132,18 @@
             background-image: url("../../images/icons/clear_black_24dp.svg");
         }
     }
+   
+    &__problem{
+        span{
+            background-image: url("../../images/icons/report_problem_red_24dp.svg");
+        }
+    }
+    
+    &__checked{
+        span{
+            background-image: url("../../images/icons/check_circle_green_24dp.svg");
+        }
+    }
 }
 
 .icon{

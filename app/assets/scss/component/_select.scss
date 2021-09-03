@@ -1,0 +1,22 @@
+
+select{
+    width: 100%;
+	padding: 1rem;
+	cursor: pointer;
+	color: $text;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+    background-image: url("../../images/icons/expand_more_black_24dp.svg");
+    background-repeat: no-repeat;
+	background-size: 1.5rem;
+	background-position: 95% 50%;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+
+
+

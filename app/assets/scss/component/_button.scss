@@ -3,27 +3,45 @@
     font-weight: bold;
     appearance: none;
     padding: 0.5rem 2rem;
+    border:none;
+    box-shadow: none;
+    background-color:$transparent;
+    border-radius: 2px;
 }
+
+
+.btn-lg{
+    width: 100%;
+    padding: 1rem 0;
+}
+
 
 .btn-white{
     background-color:$white;
     color: $primary;
     border: 1px solid $primary;
-    border-radius: 3px;
 }
 
 .btn-primary{
     background-color:$primary;
     color: $white;
     border: 1px solid $primary;
-    border-radius: 3px;
 }
 
 .btn-warn{
     background-color:$white;
     color: $warn;
     border: 1px solid $warn;
-    border-radius: 3px;
+}
+
+.btn-verification{
+    border: 1px solid $border;
+    color: $primary;
+}
+
+.btn-disabled{
+    border: 1px solid $border;
+    color: $border;
 }
 
 .attachment{

@@ -24,16 +24,27 @@ document.getElementById("card-expand").addEventListener("click",function (){
 function toggleFullScreen(Id){
     document.getElementById(Id).classList.toggle("d-none");
 }
-document.getElementById("iconClear").addEventListener("click",function(){
-    toggleFullScreen("watchMember");
+document.getElementById("closeAdminForm").addEventListener("click",function(){
+    toggleFullScreen("addMember");
 });
 
 document.getElementById("addAdmin").addEventListener("click",function(){
     toggleFullScreen("addMember");
+    
 });
 
+document.getElementById("closeEditForm").addEventListener("click",function(){
+    toggleFullScreen("editMember");
+});
+
+document.getElementById("closeCard").addEventListener("click",function(){
+    toggleFullScreen("watchMember");
+});
+//addAdmin
+console.log(document.getElementById("addAdmin"));
+
 let buttons_watch = document.querySelectorAll(".icon__watch");
-for(let i = 0;i < buttons_edit.length ; i ++){
+for(let i = 0;i < buttons_watch.length ; i ++){
     buttons_watch[i].addEventListener("click",function (){
         toggleFullScreen("watchMember");
     });
