@@ -21,16 +21,27 @@ document.getElementById("card-expand").addEventListener("click",function (){
     
 })
 
-function toggleFullScreen(){
-    document.getElementById("full-screen").classList.toggle("d-none");
+function toggleFullScreen(Id){
+    document.getElementById(Id).classList.toggle("d-none");
 }
 document.getElementById("iconClear").addEventListener("click",function(){
-    toggleFullScreen();
+    toggleFullScreen("watchMember");
 });
 
-let buttons_edit = document.querySelectorAll(".icon__watch");
+document.getElementById("addAdmin").addEventListener("click",function(){
+    toggleFullScreen("addMember");
+});
+
+let buttons_watch = document.querySelectorAll(".icon__watch");
+for(let i = 0;i < buttons_edit.length ; i ++){
+    buttons_watch[i].addEventListener("click",function (){
+        toggleFullScreen("watchMember");
+    });
+}
+
+let buttons_edit = document.querySelectorAll(".icon__pen");
 for(let i = 0;i < buttons_edit.length ; i ++){
     buttons_edit[i].addEventListener("click",function (){
-        toggleFullScreen();
+        toggleFullScreen("editMember");
     });
 }

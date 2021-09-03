@@ -18,6 +18,9 @@
     font-weight:400;
 }
 
+.fz-5{
+    font-size: map-get($spacers,5);
+}
 
 .fz-6{
     font-size: map-get($spacers,6);
