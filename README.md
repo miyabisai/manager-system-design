@@ -11,7 +11,7 @@ https://codepen.io/Luxplanjay/pen/qPKzWQ
 - 使用模版語言
 https://www.npmjs.com/package/nunjucks
 
-guip-ejs不知道為什麼不能安裝就換gulp-nunjucks-render
+guip-ejs不知道為什麼不能用就換gulp-nunjucks-render
 
 ### 心得整理
 
