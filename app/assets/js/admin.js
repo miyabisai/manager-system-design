@@ -24,14 +24,15 @@ document.getElementById("card-expand").addEventListener("click",function (){
 function toggleFullScreen(Id){
     document.getElementById(Id).classList.toggle("d-none");
 }
+
+document.getElementById("openAdminForm").addEventListener("click",function(){
+    toggleFullScreen("addMember");
+});
+
 document.getElementById("closeAdminForm").addEventListener("click",function(){
     toggleFullScreen("addMember");
 });
 
-document.getElementById("addAdmin").addEventListener("click",function(){
-    toggleFullScreen("addMember");
-    
-});
 
 document.getElementById("closeEditForm").addEventListener("click",function(){
     toggleFullScreen("editMember");
@@ -40,17 +41,16 @@ document.getElementById("closeEditForm").addEventListener("click",function(){
 document.getElementById("closeCard").addEventListener("click",function(){
     toggleFullScreen("watchMember");
 });
-//addAdmin
-console.log(document.getElementById("addAdmin"));
 
-let buttons_watch = document.querySelectorAll(".icon__watch");
+
+const buttons_watch = document.querySelectorAll(".icon__watch");
 for(let i = 0;i < buttons_watch.length ; i ++){
     buttons_watch[i].addEventListener("click",function (){
         toggleFullScreen("watchMember");
     });
 }
 
-let buttons_edit = document.querySelectorAll(".icon__pen");
+const buttons_edit = document.querySelectorAll(".icon__pen");
 for(let i = 0;i < buttons_edit.length ; i ++){
     buttons_edit[i].addEventListener("click",function (){
         toggleFullScreen("editMember");

@@ -18,7 +18,7 @@
             </button>
         </div>
     </div>
-    <div class="content d-flex">        
+    <div class="content d-flex position-relative">        
         <div class="content-left mr-4">
             <div class="post-filter d-flex ">
                 <p class="font-bold">All (4)</p>
@@ -102,7 +102,7 @@
                         <hr class="post-bottom mt-6">
                     </div>
                 </li>
-                <div class="post post-article post-data no-border-top">
+                <li class="post post-article post-data no-border-top">
                     <div class="author w-100 d-flex flex-row jusctify-content-between">
                         <div class="user w-100">
                             <div class="user-head">
@@ -140,12 +140,52 @@
                         <span></span>
                     </button>
                 </div>
-                <div class="input">
+                <div class="buttons position-relative ">
                     <input type="button" class="btn btn-white mr-4" value="Mark as read">
-                    <input type="submit" class="btn btn-primary" value="Reply">
+                    <input type="submit" id="sendArticle" class="btn btn-primary " value="Reply">
+                    <div id="comment" class="comment position-bottom" >
+                        <div class="comment-head d-flex">
+                            <select name="" id="" class="comment-select select-font mr-5">
+                                <option value="1">Body Text</option>
+                            </select>
+                            <button class="icon-button icon icon__bold mr-6">
+                                <span></span>
+                            </button>
+                            <button class="icon-button icon icon__italic mr-6">
+                                <span></span>
+                            </button>
+                            <button class="icon-button icon icon__list mr-6">
+                                <span></span>
+                            </button>
+                            <button class="icon-button icon icon__list_numbered mr-6">
+                                <span></span>
+                            </button>
+                            <button class="icon-button icon icon__photo mr-6">
+                                <span></span>
+                            </button>
+                            <button class="icon-button icon icon__link mr-6">
+                                <span></span>
+                            </button>
+                            <button class="icon-button icon icon__unfold_more">
+                                <span></span>
+                            </button>
+                        </div>
+                        <div id="comment-area" class="comment-area d-flex flex-column">
+                            <div class="comment-text">
+                              <p class="text-border"> Reply an answer...</p>
+                            </div>
+                            <div class="buttons text-right">
+                                <input type="button" id="cancelArticle" class="btn btn-white mr-2" value="Cancle">
+                                <input type="submit" id="sendedArticle" class="btn btn-primary " value="Reply">
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
+            
         </div>
+        
     </div>
-   
+ <script src="{{javascript_directory}}index.js"></script>
 {% endblock %}

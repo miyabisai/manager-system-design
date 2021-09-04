@@ -50,6 +50,51 @@
     .article{
         padding-left: calc(#{map-get($spacers, 10)}+10px);
     }
-
-
 }
+
+.comment{
+    position: absolute;
+    bottom:0;
+    right:0;
+    height: 340px;
+    width: 37rem;
+    background-color: $white;
+    border: 1px solid $border;
+    transition:  transform .5s;
+    transform-origin:bottom right;
+    transform:scale(0);
+    &-head{
+        border-bottom: 1px solid $border;
+        background-color: $third;
+        
+    }
+    &-select{
+        width: 110px;
+        background-color: $transparent;
+        border: none;
+
+    }
+
+    &-area{
+        position: relative;
+        height: 80%;
+
+    }
+    &-text{
+        padding:1rem;
+        text-align: left;
+        height: 100%;
+        width: 100%;
+    }
+    .buttons{
+        width: 100%;
+        position: absolute;
+        bottom:0;
+        right:1.5rem;
+    }
+}
+
+.show-comment{
+    transform:scale(1,1);
+}
+

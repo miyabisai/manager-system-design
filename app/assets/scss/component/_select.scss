@@ -7,7 +7,7 @@ select{
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-    background-image: url("../../images/icons/expand_more_black_24dp.svg");
+   background-image: url("../../images/icons/expand_more_black_24dp.svg");
     background-repeat: no-repeat;
 	background-size: 1.5rem;
 	background-position: 95% 50%;
@@ -16,6 +16,13 @@ select{
 select::-ms-expand {
     display: none;
 }
+
+.select-font{
+	background-image: url("../../images/icons/arrow_drop_down_black_24dp.svg");
+	background-position: 110% 50%;
+	
+}
+
 
 
 
