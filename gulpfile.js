@@ -57,7 +57,7 @@ function styles() {
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.css.dest))
-    .pipe(browserSync.stream());
+    // .pipe(browserSync.stream());
 }
 
 function scripts() {
