@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp",
     "watch": "gulp watch",
-    "deploy":"gulp deploy"
+    "deploy": "gulp deploy"
   },
   "repository": {
     "type": "git",
