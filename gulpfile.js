@@ -64,7 +64,7 @@ function scripts() {
   return gulp
     .src(paths.js.assets)
     .pipe(gulp.dest(paths.js.dest))
-    .pipe(browserSync.stream());
+    // .pipe(browserSync.stream());
 }
 
 function index() {
@@ -80,7 +80,7 @@ function index() {
       })
     )
     .pipe(gulp.dest(paths.index.dest))
-    .pipe(browserSync.stream());
+    // .pipe(browserSync.stream());
 }
 
 function pages() {
@@ -96,7 +96,7 @@ function pages() {
       })
     )
     .pipe(gulp.dest(paths.pages.dest))
-    .pipe(browserSync.stream());
+    // .pipe(browserSync.stream());
 }
 
 function images() {
@@ -104,7 +104,7 @@ function images() {
     .src(paths.images.assets)
     .pipe(imagein())
     .pipe(gulp.dest(paths.images.dest))
-    .pipe(browserSync.stream());
+    // .pipe(browserSync.stream());
 }
 
 function watch() {
@@ -118,9 +118,9 @@ function watch() {
   // gulp.watch(paths.index.assets).on('change', browserSync.reload);
   //gulp.watch(paths.pages.assets,pages);
   //gulp.watch(paths.index.assets);
-  gulp.watch(paths.index.assets).on('change', browserSync.reload);
-  gulp.watch(paths.pages.assets).on('change', browserSync.reload);
-  gulp.watch(paths.images.assets, images);
+  // gulp.watch(paths.index.assets).on('change', browserSync.reload);
+  // gulp.watch(paths.pages.assets).on('change', browserSync.reload);
+  // gulp.watch(paths.images.assets, images);
 }
 function deploy(){
   return gulp
@@ -132,5 +132,6 @@ exports.deploy = deploy;
 
 
 //Create default tasks
-var build = gulp.parallel(styles, scripts, pages,index,  images, watch);
+// var build = gulp.parallel(styles, scripts, pages,index,  images, watch);
+var build = gulp.parallel(styles, scripts, pages,index, watch);
 gulp.task('default', build);
